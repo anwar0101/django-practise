@@ -17,6 +17,8 @@ Including another URLconf
 from django.conf.urls import url
 from . import views
 
+app_name = "blog"
+
 urlpatterns = [
     url(r'^$', views.home, name='home'),
     url(r'^(?P<user_id>[0-9]+)/ask/$', views.ask, name='ask'),
